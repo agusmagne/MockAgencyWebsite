@@ -13,7 +13,6 @@ import {
 } from "./NavbarElements";
 
 function Navbar() {
-  const asd = 3;
   const [click, setClick] = useState(false);
 
   function handleClick() {
