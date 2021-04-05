@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -12,19 +12,13 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-
-  function handleClick() {
-    setClick(!click);
-  }
-
+function Navbar({ toggleOpen }) {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">AGENCY</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggleOpen}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
