@@ -79,9 +79,15 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 
-  &.active {
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #01bf71;
+  }
+
+  &:active {
     border-bottom: 3px solid #01bf71;
   }
 `;
@@ -108,7 +114,7 @@ export const NavBtnLink = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  &.hober {
+  &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;

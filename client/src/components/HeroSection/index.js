@@ -11,7 +11,7 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
-} from "./HeroSectionElements";
+} from "./HeroElements";
 
 function HeroSection() {
   const [hover, setHover] = useState(false);
@@ -43,7 +43,7 @@ function HeroSection() {
               to="/signup"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
-              primary={false}
+              primary={true}
             >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
