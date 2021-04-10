@@ -36,10 +36,10 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "services",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  id: "invest",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "You're your best investment",
   headline: "Use your money wisely",
   description:
@@ -49,5 +49,5 @@ export const homeObjThree = {
   img: invest,
   alt: "Invest",
   dark: true,
-  primary: true,
+  primary: false,
 };

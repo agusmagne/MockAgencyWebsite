@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Sidebar, Navbar, HeroSection, InfoSection } from "../components";
+import {
+  Sidebar,
+  Navbar,
+  HeroSection,
+  InfoSection,
+  Services,
+  Footer,
+} from "../components";
 import {
   homeObjOne,
   homeObjThree,
@@ -20,7 +27,9 @@ function Home() {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <Services />
       <InfoSection {...homeObjThree} />
+      <Footer />
     </>
   );
 }
