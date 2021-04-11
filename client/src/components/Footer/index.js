@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FaFacebook,
   FaInstagram,
@@ -23,6 +24,10 @@ import {
 } from "./FooterElements";
 
 function Footer() {
+  function scrollToTop() {
+    scroll.scrollToTop();
+  }
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -66,7 +71,9 @@ function Footer() {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">AGENCY</SocialLogo>
+            <SocialLogo to="/" onClick={scrollToTop}>
+              AGENCY
+            </SocialLogo>
             <WebsiteRights>
               AGENCY © {new Date().getFullYear()} all rights reserved.
             </WebsiteRights>
