@@ -43,7 +43,7 @@ function HeroSection() {
               to="/signup"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
-              primary={true}
+              primary="true"
             >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>

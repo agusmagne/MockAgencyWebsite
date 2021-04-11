@@ -31,10 +31,13 @@ function InfoSection({
   dark,
   dark2,
 }) {
+  const theme = {
+    height: 700000,
+  };
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper>
+        <InfoWrapper height={window.innerHeight - 80}>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>

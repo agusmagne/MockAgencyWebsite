@@ -14,7 +14,7 @@ import {
 
 function Services() {
   return (
-    <ServicesContainer id="services">
+    <ServicesContainer id="services" height={window.innerHeight - 80}>
       <ServicesH1>Our services</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>

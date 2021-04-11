@@ -18,13 +18,37 @@ function Sidebar({ isOpen, toggleOpen }) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggleOpen}>
+          <SidebarLink
+            to="about"
+            onClick={toggleOpen}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-79}
+          >
             About
           </SidebarLink>
-          <SidebarLink to="discover" onClick={toggleOpen}>
+          <SidebarLink
+            to="discover"
+            onClick={toggleOpen}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-79}
+          >
             Discover
           </SidebarLink>
-          <SidebarLink to="services" onClick={toggleOpen}>
+          <SidebarLink
+            to="services"
+            onClick={toggleOpen}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-79}
+          >
             Services
           </SidebarLink>
           <SidebarLink to="signup" onClick={toggleOpen}>

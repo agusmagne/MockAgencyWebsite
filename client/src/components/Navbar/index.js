@@ -52,7 +52,7 @@ function Navbar({ toggleOpen }) {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={50}
+                  offset={-80}
                 >
                   About
                 </NavLinks>
@@ -64,7 +64,7 @@ function Navbar({ toggleOpen }) {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={50}
+                  offset={-80}
                 >
                   Discover
                 </NavLinks>
@@ -76,7 +76,7 @@ function Navbar({ toggleOpen }) {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={50}
+                  offset={-80}
                 >
                   Services
                 </NavLinks>
@@ -88,7 +88,7 @@ function Navbar({ toggleOpen }) {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={50}
+                  offset={-80}
                 >
                   Sign Up
                 </NavLinks>
