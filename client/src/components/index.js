@@ -5,3 +5,4 @@ export { default as InfoSection } from "./InfoSection";
 export { default as Services } from "./Services";
 export { default as Footer } from "./Footer";
 export { default as SignIn } from "./SignIn";
+export { default as SignUp } from "./SignUp";

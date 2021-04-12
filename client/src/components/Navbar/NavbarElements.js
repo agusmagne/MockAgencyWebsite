@@ -98,11 +98,11 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: no-wrap;
+  border-radius: ${({ primary }) => (primary ? "50px" : "0px")};
+  background: ${({ primary }) => (primary ? "#01bf71" : "transparent")};
+  white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #fff;
   font-size: 16px;
   outline: none;
   border: none;
@@ -112,7 +112,8 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: ${({ primary }) => (primary ? "#fff" : "transparent")};
+    color: ${({ primary }) => (primary ? "#010606" : "#fff")};
+    text-decoration: ${({ primary }) => (primary ? "none" : "underline")};
   }
 `;

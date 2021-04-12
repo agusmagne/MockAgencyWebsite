@@ -83,19 +83,22 @@ function Navbar({ toggleOpen }) {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="signup"
+                  to="invest"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
                 >
-                  Sign Up
+                  Invest
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to="/signin">Log in</NavBtnLink>
+              <NavBtnLink to="/signup" primary={true}>
+                Sign Up
+              </NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

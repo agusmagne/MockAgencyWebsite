@@ -40,8 +40,8 @@ export const homeObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "You're your best investment",
-  headline: "Use your money wisely",
+  topLine: "You're our best investment",
+  headline: "Using your money wisely",
   description:
     "Taking care of your money is our top priority. We work hard for you to earn as much as possible, exploiting your investment at maximum",
   buttonLabel: "Our bundles",
