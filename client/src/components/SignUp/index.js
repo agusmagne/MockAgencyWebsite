@@ -1,6 +1,5 @@
 import React from "react";
 import background from "../../videos/background.mp4";
-import { Input } from "@material-ui/core";
 import {
   Container,
   BackgroundVideo,
@@ -10,6 +9,11 @@ import {
   BoxLabel,
   ActionColumn,
   Form,
+  Field,
+  SignUpBtn,
+  AlreadyHaveUserWrapper,
+  SignInLink,
+  AlreadyHaveUserText,
 } from "./SignUpElements";
 
 function SignUp() {
@@ -28,13 +32,19 @@ function SignUp() {
           <BoxWrapper>
             <FormColumn>
               <Form>
-                <Input placeholder="AasdsadsadSD" label="asd" />
-                <Input />
-                <Input />
-                <Input />
+                <Field label="Name" />
+                <Field label="Email" />
+                <Field label="Password" />
+                <Field label="Confirm password" />
               </Form>
             </FormColumn>
-            <ActionColumn>ASD</ActionColumn>
+            <ActionColumn>
+              <SignUpBtn variant="contained">Sign up</SignUpBtn>
+              <AlreadyHaveUserWrapper>
+                <AlreadyHaveUserText>Already have a user?</AlreadyHaveUserText>
+                <SignInLink>Log in</SignInLink>
+              </AlreadyHaveUserWrapper>
+            </ActionColumn>
           </BoxWrapper>
         </BoxContainer>
       </Container>
