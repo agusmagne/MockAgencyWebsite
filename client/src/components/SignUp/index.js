@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import background from "../../videos/background.mp4";
+import { SignIn } from "./service";
 import {
   Container,
   BackgroundVideo,
@@ -17,6 +18,18 @@ import {
 } from "./SignUpElements";
 
 function SignUp() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confPassword, setConfPassword] = useState("");
+
+  function signUpIntent() {
+    let request = { name: name, username: email, password: password };
+    SignIn(request).then((res) => {
+      console.log(res);
+    });
+  }
+
   return (
     <>
       <Container>
@@ -32,14 +45,25 @@ function SignUp() {
           <BoxWrapper>
             <FormColumn>
               <Form>
-                <Field label="Name" />
-                <Field label="Email" />
-                <Field label="Password" />
-                <Field label="Confirm password" />
+                <Field label="Name" onChange={(e) => setName(e.target.value)} />
+                <Field
+                  label="Email"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <Field
+                  label="Password"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <Field
+                  label="Confirm password"
+                  onChange={(e) => setConfPassword(e.target.value)}
+                />
               </Form>
             </FormColumn>
             <ActionColumn>
-              <SignUpBtn variant="contained">Sign up</SignUpBtn>
+              <SignUpBtn variant="contained" onClick={signUpIntent}>
+                Sign up
+              </SignUpBtn>
               <AlreadyHaveUserWrapper>
                 <AlreadyHaveUserText>Already have a user?</AlreadyHaveUserText>
                 <SignInLink>Log in</SignInLink>
