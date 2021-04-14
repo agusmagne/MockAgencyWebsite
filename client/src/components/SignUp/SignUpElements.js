@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TextField, Button, Link } from "@material-ui/core";
+import { TextField, Button } from "@material-ui/core";
 import { Link as LinkR } from "react-router-dom";
 
 export const Container = styled.div`
@@ -40,6 +40,22 @@ export const BoxLabel = styled.h1`
     font-size: 24px;
     text-align: center;
     padding: 32px 16px 0 16px;
+  }
+`;
+
+export const TopLineWrapper = styled.div`
+  display: grid;
+  justify-items: end;
+`;
+
+export const CloseBtnWrap = styled(LinkR)`
+  margin: 24px 24px -24px 0;
+  color: #000;
+  &:hover {
+    color: #01bf71;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
   }
 `;
 

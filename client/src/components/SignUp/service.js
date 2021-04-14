@@ -1,11 +1,13 @@
-import axios from "axios";
+import api from "../../Api";
 
-export function SignIn(request) {
-  return axios({
-    method: "POST",
-    url: "http://localhost:5000/users/register",
-    data: request,
-  })
-    .then((res) => {})
-    .catch((err) => {});
+export async function RegisterUser(name, email, password) {
+  try {
+    return await api({
+      method: "POST",
+      url: "users/register",
+      data: { name: name, username: email, password: password },
+    });
+  } catch (err) {
+    throw err;
+  }
 }

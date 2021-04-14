@@ -31,9 +31,6 @@ function InfoSection({
   dark,
   dark2,
 }) {
-  const theme = {
-    height: 700000,
-  };
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
